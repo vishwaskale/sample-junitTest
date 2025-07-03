@@ -5,18 +5,20 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
+//import com.example.junit.Calculator;
 
 public class CalculatorAdvancedTest {
     @ParameterizedTest
     @CsvSource({"0,0,0", "-1,-1,-2", "100,200,300", "-5,5,0"})
     void testAddVarious(int a, int b, int expected) {
-        Calculator calc = new Calculator();
-        assertEquals(expected, calc.add(a, b));
+    Calculator calc = new Calculator();
+    assertEquals(expected, calc.add(a, b));
     }
 
     @ParameterizedTest
     @CsvSource({"0,0,0", "-1,-1,0", "100,200,-100", "-5,5,-10"})
     void testSubtractVarious(int a, int b, int expected) {
+        
         Calculator calc = new Calculator();
         assertEquals(expected, calc.subtract(a, b));
     }
