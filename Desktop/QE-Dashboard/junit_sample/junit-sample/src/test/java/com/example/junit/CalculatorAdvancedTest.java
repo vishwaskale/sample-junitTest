@@ -40,7 +40,7 @@ public class CalculatorAdvancedTest {
     @Test
     void testDivideNegative() {
         Calculator calc = new Calculator();
-        assertEquals(-2, calc.divide(-6, 3));
+        assertEquals(-3, calc.divide(-6, 3));
         assertEquals(-2, calc.divide(6, -3));
         assertEquals(2, calc.divide(-6, -3));
     }
